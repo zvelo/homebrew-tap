@@ -3,13 +3,13 @@ class Zapi < Formula
   homepage "https://github.com/zvelo/zapi"
   url "https://github.com/zvelo/zapi/releases/download/v1.6.0/zapi_1.6.0_darwin_amd64.tar.gz"
   version "1.6.0"
-  sha256 "e1d1a53bd4edcbfc64fb76aa678f9535b2415ee15a63710ebb16505bc4a6f331"
+  sha256 "2d6ffc67e3b9b5ec827f22278f9b023928941f2fbe7727ab315eeaafe51850ff"
 
   def install
     bin.install "zapi"
   end
 
   test do
-    system "#{bin}/program -version"
+    system "#{bin}/zapi -version"
   end
 end
